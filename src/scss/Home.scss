@@ -1,0 +1,125 @@
+@import './base';
+@import "./../../node_modules/react-alice-carousel/lib/scss/alice-carousel.scss";
+// react-alice-carousel/lib/scss/alice-carousel.scss
+
+
+// @media (max-width: 20000px) {
+//   .carousel-indicators
+//     {
+//       display: flex;
+//       justify-content: space-between;
+//     cursor: pointer;
+//     pointer-events: none;
+//   }
+// }
+
+
+
+
+.HomeHeader {
+    //padding: 2rem;
+    
+    height: 7.5rem;
+    //display: flex;
+    //align-items: center;
+    //justify-content: space-between;
+    background-color:$color-blue-dark-naft-1 ;
+    //padding-right: 11rem;
+    //padding-left: 8rem;
+   .left{
+       height: 3.12rem;
+   }
+   .right{
+    height: 5.7rem;
+   }
+  
+    
+}
+
+.HomeFooter{
+  background-color:$color-blue-dark-naft-1 !important;   
+   color:$color-light-naft ;
+   height: 10rem  !important;
+   display: flex !important;
+   //flex-direction: column !important;
+  //  justify-content: center !important;
+   align-items: center;
+   
+   .HomeFooter-text{
+     display: flex  !important;
+     flex-direction: column  !important;
+     justify-content: center  !important;
+     align-items: center  !important;
+     
+   }
+}
+.HomeSlider2{
+        margin-left: 30rem;
+}
+.HomeNavbar{
+    direction: rtl !important;
+    text-align: right; 
+}
+.justifyContent{
+    display: flex;
+    justify-content: center;
+    background-color:$color-blue-dark-naft-1 ;
+    color:$color-light-naft ;
+    border: none;
+    border-radius: 2px;
+    width: 14rem;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.slideSpace{
+  //792
+  //49.6rem
+  margin-top: 7rem;
+  //margin: auto;
+}
+.w-10{
+  margin-left: 50rem;
+}
+ol.carousel-indicators{
+  display: none !important;
+}
+.nemad{
+  background-color:$color-light-naft !important ;
+}
+.cardBorder{
+  border: 2px solid $color-blue-dark-naft-3 !important;
+}
+.Spacer{
+  width: 100%;
+  height: .5vh;
+  background-color:$color-blue-dark-naft-1 ;
+  margin-bottom: -15px;
+    margin-top: 5rem;
+}
+.svg{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.top{
+  margin-right: 12rem;
+  margin-top: 3rem;
+  margin-left: 21rem;
+ 
+  height: 35rem;
+  
+  //margin-top: 20 !important;
+}
+.alice-carousel__next-btn-wrapper{
+  margin-left: -3.5rem;
+}
+.alice-carousel__prev-btn-wrapper{
+  margin-right: 5rem;
+}
+.alice-carousel__dots{
+  margin-right: 8.7rem;
+}
