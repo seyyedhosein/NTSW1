@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Dropdown } from 'react-bootstrap'
-import logo11 from '../../images/logo11.png';
+//import logo11 from '../../images/logo11.png';
 import Screenshot from '../../images/Screenshot.png';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -75,17 +75,15 @@ const HomeCards = () => {
     //     autoplay:true
     // }
     return (
-        <div className="d-flex flex-column">
-            <div className="Spacer">
+        <div className="d-flex flex-column align-items-center">
 
-            </div>
-            <div className={'d-flex'}>
-                <Card className={'cardBorder shadow-lg mt-5 mr-2'} style={{ width: '58rem' }}>
+            <div className={'card-row  d-flex justify-content-center'}>
+                <Card className={'cardBorder mt-5  '} style={{ width: '48rem' }}>
 
                     <Card.Body >
-                        <div className="d-flex flex-row">
+                        <div className="cardHeader ">
                             <img className="svg" src="/assets/img/volume-up.svg" alt="" width="32" height="32" title="Bootstrap"></img>
-                            <Card.Title className={'mt-1 mr-1 d-flex'}> اطلاعیه ها - 1 </Card.Title>
+                            <Card.Title className={'text1 mt-3 mr-1 d-flex'}> اطلاعیه ها - 1 </Card.Title>
                         </div>
 
 
@@ -94,67 +92,80 @@ const HomeCards = () => {
 
                     {/* <Dropdown.Divider /> */}
 
-                    <Card.Body className='pb-2'>
-                        <Card.Link className={'pr-3  d-flex'} href="#">امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                    <Card.Body className=' pb-2'>
+                        <Card.Link className={'text2  pr-3  d-flex'} href="#">امکان ارسال درخواست مجوز ارزی به استان محل صدورکارتی تولیدی کارای تولیدی دارای جواز تاسیس</Card.Link>
                         <Dropdown.Divider />
-                        <Card.Link className={'pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                        <Card.Link className={'text2  pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارتی تولیدی کارتی تولیدی دارای جواز تاسیس</Card.Link>
 
                         <Dropdown.Divider />
-                        <Card.Link className={'pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                        <Card.Link className={'text2  pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدورر کارتی تولیدی دارا کارتی تولیدی دارای جواز تاسیس</Card.Link>
 
                         <Dropdown.Divider />
-                        <Card.Link className={'pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                        <Card.Link className={'text2  pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل کارتی تولیدیصدور کاهای تولیدی دارای جواز تاسیس</Card.Link>
 
                         <Dropdown.Divider />
-                        <Card.Link className={'pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                        <Card.Link className={'text2  pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل کارتی تولیدیصدور کارای تولیدی دارای جواز تاسیس</Card.Link>
 
                         <div className={'d-flex pt-3 justify-content-center'}>
                             <button className={"justifyContent"}>
-                                go somewhere
-                        </button>
+                                بایگانی                       </button>
                         </div>
                     </Card.Body>
                 </Card>
 
                 {/* /////////////////////// */}
 
-                <Card className={'cardBorder shadow-lg mt-5 mr-4'} style={{ width: '58rem' }}>
+                <Card className={'cardBorder  mt-5 mr-4'} style={{ width: '48rem' }}>
 
                     <Card.Body >
-                        <div className="d-flex flex-row">
+                        <div className="cardHeader">
                             <img className="svg" src="/assets/img/volume-up.svg" alt="" width="32" height="32" title="Bootstrap"></img>
-                            <Card.Title className={'mt-1 mr-1 d-flex'}> اطلاعیه ها - 2 </Card.Title>
+                            <Card.Title className={'text1 mt-3 mr-1 d-flex'}> اطلاعیه ها - 2 </Card.Title>
                         </div>
 
 
 
                     </Card.Body>
-
+                
                     {/* <Dropdown.Divider /> */}
 
                     <Card.Body className='pb-2'>
-                        <Card.Link className={'pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                        <Card.Link className={'text2 pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت کارتی تولیدی دارای جواز تاسیس</Card.Link>
 
                         <Dropdown.Divider />
-                        <Card.Link className={'pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                        <Card.Link className={'text2 pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدو کارتی تولیدی دارای جواز تاسیس</Card.Link>
 
                         <Dropdown.Divider />
-                        <Card.Link className={'pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                        <Card.Link className={'text2 pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدو کارتی تولیدی دارای جواز تاسیس</Card.Link>
 
                         <Dropdown.Divider />
-                        <Card.Link className={'pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                        <Card.Link className={'text2 pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدوکارتی تولیدی دارای جواز تاسیس</Card.Link>
 
                         <Dropdown.Divider />
-                        <Card.Link className={'pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل صدور کارت بازرگانی برای واحدهای تولیدی دارای جواز تاسیس</Card.Link>
+                        <Card.Link className={'text2 pr-3  d-flex'} href="#"> امکان ارسال درخواست مجوز ارزی به استان محل  کارتی تولیدی صدوردارای جواز تاسیس</Card.Link>
 
                         <div className={'d-flex pt-3 justify-content-center'}>
                             <button className={"justifyContent"}>
-                                go somewhere
+                                بایگانی
                         </button>
                         </div>
                     </Card.Body>
                 </Card>
             </div>
+            {/* <a >
+                <Card className="cardBorder ml-4" style={{height:'23rem', width: '18rem' }}>
+                    <Card.Img height="192" variant="top" src={Screenshot} />
+                    <Card.Body>
+                        <Card.Title className="HomeNavbar">همتا</Card.Title>
+                        <Card.Text className="HomeNavbar">
+                            امکان ارسال استان محل صدور کارت درخواست مجوز ارزی به استان مواحدهای تولیدی به دارای جواز تاسیس امکان  ارسال درخواست مجوز ارزی به   بازرگانی برای واحدهای تولیدی به دارای جواز تاسیس معرفی می گردد.
+                            
+                       </Card.Text>
+                        <Card.Link href="#" className="d-flex justify-content-center">hamta.ntsw.ir</Card.Link>
+
+                    </Card.Body>
+                </Card>
+            </a> */}
 
             {/* /////////////little Cards/////////////// */}
             {/* className="d-flex mr-4 mt-2" */}
@@ -169,7 +180,7 @@ const HomeCards = () => {
 
             </div> */}
 
-            <div className=" top">
+            <div className="kh1">
                 <AliceCarousel
                     mouseTracking
                     items={items}
@@ -177,6 +188,7 @@ const HomeCards = () => {
                 />
 
             </div>
+
         </div>
 
 

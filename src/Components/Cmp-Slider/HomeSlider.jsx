@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 //import { React } from "react";
 import '../../scss/Home.css'
+import ntsw1 from '../../images/ntsw1.png';
 //import m1 from '../../images/m1.png';
 //import headertitle from "../../images/headertitle.png";
 //import { useState } from 'react';
@@ -27,28 +28,28 @@ export class BootstrapCarousel extends Component {
                         <Carousel.Item style={{ 'height': "500px" }} >
                             <div className="px-auto slideSpace">
                                 <img style={{ 'height': "300px" }}
-                                    className="  w-10"
-                                    src={'assets/img/logo192.png'} />
+                                    className=" w-45"
+                                    src={ntsw1} />
                             </div>
                             <Carousel.Caption>
                                 <h3> </h3>
                             </Carousel.Caption>
                         </Carousel.Item  >
                         <Carousel.Item style={{ 'height': "500px" }}>
-                            <div className="slideSpace">
+                            <div className="px-auto slideSpace">
                                 <img style={{ 'height': "300px" }}
-                                    className="  w-10"
-                                    src={'assets/img/logo192.png'} />
+                                    className="w-45"
+                                    src={ntsw1} />
                             </div>
                             <Carousel.Caption>
                                 <h3></h3>
                             </Carousel.Caption>
-                        </Carousel.Item>
+                        </Carousel.Item> 
                         <Carousel.Item style={{ 'height': "500px" }}>
-                            <div className="slideSpace">
+                            <div className="px-auto slideSpace">
                                 <img style={{ 'height': "300px" }}
-                                    className="  w-10"
-                                    src={'assets/img/logo192.png'} />
+                                    className="w-45"
+                                    src={ntsw1} />
                             </div>
                             <Carousel.Caption>
                                 <h3></h3>

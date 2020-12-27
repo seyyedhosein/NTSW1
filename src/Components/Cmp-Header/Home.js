@@ -5,16 +5,16 @@ import HomeHeader from "./HomeHeader";
 //import './App.css';
 import BootstrapCarousel from '../Cmp-Slider/HomeSlider'
 import HomeNavbar from '../Cmp-Navbar/HomeNavbar';
+import Test from '../test';
 import  HomeCards  from "../Cmp-Cards/HomeCards";
 import Footer from "../Cmp-Footer/Footer";
-
 
 const Home = () => {
   return (
     <div>
       <HomeHeader />
       <HomeNavbar />
-      
+      {/* <Test/> */}
       <div className="App">
         <BootstrapCarousel />
       </div>

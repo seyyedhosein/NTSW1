@@ -1,66 +1,105 @@
-import { React } from "react";
-import { Dropdown } from "react-bootstrap";
-import '../../scss/Home.css';
+import React, { useState } from "react";
 
-
+import { Dropdown, Button, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+// import '../../scss/Home.css';
 const HomeNavbar = () => {
+
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const toggle = () => setDropdownOpen(prevState => !prevState);
+    //this.toggle = this.toggle.bind(this);
+    //const onMouseEnter = onMouseEnter.bind;
+
+    const [dropdownOpen1, setDropdownOpen1] = useState(false);
+    const toggle1 = () => setDropdownOpen1(prevState => !prevState);
+    const [dropdownOpen2, setDropdownOpen2] = useState(false);
+    const toggle2 = () => setDropdownOpen2(prevState => !prevState);
+
+
+
+
+
     return (
-        <ul className="nav nav-pills bg-info  d-flex flex-row-reverse  justify-content-center">
-           
-            <Dropdown>
-                <Dropdown.Toggle className="d-flex   justify-content-center align-items-center" variant="info" id="dropdown-basic">
-                   ثبت نام
-                </Dropdown.Toggle>
+        <>
+            <div className="justify"   >
+                <ul className="nav nav-pills  navbar2 d-flex flex-row-reverse  justify-content-center align-items-center">
 
-                <Dropdown.Menu>
-                     <Dropdown.Item href="#/action-1">ثبت نام کاربران ایرانی</Dropdown.Item>
-                     <Dropdown.Divider />
-                     <Dropdown.Item href="#/action-2">  ثبت نام کاربران خارجی </Dropdown.Item>
-                     <Dropdown.Item href="#/action-3">(forein customers)</Dropdown.Item>
-                     
-                </Dropdown.Menu>
-            </Dropdown>
-            
-           
-           
-            <li className="nav-item">
-                <a className="nav-link text-white" href="#">ورود</a>
-            </li>
-            
-            <Dropdown>
-                <Dropdown.Toggle className="d-flex   justify-content-center align-items-center" variant="info" id="dropdown-basic" >
-                    سوالات متداول
-                </Dropdown.Toggle>
+                    <Dropdown isOpen={dropdownOpen} onMouseEnter={toggle} onMouseLeave={toggle} >
+                        <DropdownToggle caret className="d-flex  border-0  justify-content-center align-items-center" id="dropdown-basic">
+                            ثبت نام
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="darkblue" class="icon mr-2 bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                            </svg>
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="darkblue" class="icon mr-2 bi bi-sort-down-alt" viewBox="0 0 16 16">
+                                <path d="M3.5 3.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 12.293V3.5zm4 .5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z" />
+                            </svg> */}
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="darkblue" class="icon mr-2 bi bi-sort-up-alt" viewBox="0 0 16 16">
+                                <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707V13.5zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z" />
+                            </svg> */}
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="darkblue" class="icon mr-2 bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z" />
+                            </svg> */}
+                        </DropdownToggle>
+                        <DropdownMenu right>
+                            <DropdownItem className="text-right">ثبت نام کاربران ایرانی</DropdownItem>
+                            <DropdownItem divider className="m-0" />
+                            <DropdownItem className="text-right" >ثبت نام کاربران خارجی (forein customers)</DropdownItem>
+                            <DropdownItem></DropdownItem>
 
-                <Dropdown.Menu>
-                     <Dropdown.Item href="#/action-1">تجارت داخلی</Dropdown.Item>
-                     <Dropdown.Divider />
-                     <Dropdown.Item href="#/action-2">تجارت خارجی</Dropdown.Item>
-                     <Dropdown.Divider />
-                     <Dropdown.Item href="#/action-3">شناسه کالا</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-           
-            <Dropdown>
-                <Dropdown.Toggle className="d-flex   justify-content-center align-items-center" variant="info" id="dropdown-basic">    استعلامات  </Dropdown.Toggle>
 
-                       
-               
-                <Dropdown.Menu>
-                     <Dropdown.Item href="#/action-1">شناسه کالا</Dropdown.Item>
-                     
-                </Dropdown.Menu>
-            </Dropdown>
-           
-            <li className="nav-item">
-                <a className="nav-link text-white text-white" href="#">زیر سامانه ها</a>
-            </li>
+                        </DropdownMenu>
+                    </Dropdown>
 
-            <li className="nav-item">
-                <a className="nav-link text-white " href="#">صفحه اصلی</a>
-            </li>
+                    <Button color="info" className="button1" size="sm">ورود</Button>{' '}
 
-        </ul>
-    );
-};
+                    <Dropdown isOpen={dropdownOpen1} onMouseEnter={toggle1} onMouseLeave={toggle1} >
+                        <DropdownToggle caret className="d-flex  border-0 justify-content-center align-items-center" variant="info" id="dropdown-basic">
+                            سوالات متداول
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="darkblue" class="icon mr-2 bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                            </svg>
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="darkblue" class="icon mr-2 bi bi-sort-down-alt" viewBox="0 0 16 16">
+                                <path d="M3.5 3.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 12.293V3.5zm4 .5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z" />
+                            </svg> */}
+                        </DropdownToggle>
+                        <DropdownMenu right>
+                            <DropdownItem className="ff m-auto text-right" >تجارت داخلی</DropdownItem>
+                            <DropdownItem divider className="m-0" />
+                            <DropdownItem className="ff  text-right" >تجارت خارجی </DropdownItem>
+                            <DropdownItem divider className="m-0" />
+                            <DropdownItem className="ff m-auto text-right"> شناسه کالا</DropdownItem>
+
+
+                        </DropdownMenu>
+                    </Dropdown>
+
+                    <Dropdown isOpen={dropdownOpen2} onMouseEnter={toggle2} onMouseLeave={toggle2} >
+                        <DropdownToggle caret className="d-flex  border-0 justify-content-center align-items-center" variant="info" id="dropdown-basic">
+                            استعلامات
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="darkblue" class="icon mr-2 bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                            </svg>
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="darkblue" class="icon mr-2 bi bi-sort-down-alt" viewBox="0 0 16 16">
+                                <path d="M3.5 3.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 12.293V3.5zm4 .5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z" />
+                            </svg> */}
+                        </DropdownToggle>
+                        <DropdownMenu right>
+                            <DropdownItem className="py-0 text-right" >شناسه کالا</DropdownItem>
+
+
+
+                        </DropdownMenu>
+                    </Dropdown>
+                    <Button color="info" className="button1" size="sm">زیرسامانه ها</Button>{' '}
+                    <Button color="info" className="button1" size="sm">صفحه اصلی</Button>{' '}
+
+
+
+
+                </ul>
+
+            </div >
+        </>
+    )
+}
+
 export default HomeNavbar;

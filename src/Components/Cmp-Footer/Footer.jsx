@@ -3,9 +3,9 @@ import '../../scss/Home.css';
 
 const Footer = () => {
     return (
-        <div>
+        <div className="mt-4 footer">
 
-            <div className=' mt-3 HomeFooter'>
+            <div className=' HomeFooter'>
                 <div>
                     <img className=" mr-3 nemad" src="/assets/img/logo.png" alt="" />
                 </div>
