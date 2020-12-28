@@ -38,8 +38,12 @@ body {
     direction: rtl;
     font-size: 100%;
     font-family: Vazir !important;
+    
 }
-
+.maincontainer{
+    max-width: 1300px;
+    margin: 0 auto;
+}
 @mixin flex-box-default() {
 
     display: flex;

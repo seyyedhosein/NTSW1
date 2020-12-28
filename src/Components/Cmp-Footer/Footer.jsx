@@ -3,7 +3,7 @@ import '../../scss/Home.css';
 
 const Footer = () => {
     return (
-        <div className="mt-4 footer">
+        <div className="maincontainer mt-4 footer">
 
             <div className=' HomeFooter'>
                 <div>

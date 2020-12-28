@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 //import { React } from "react";
 import '../../scss/Home.css'
+import Screenshot1 from '../../images/Screenshot1.png';
+
 import ntsw1 from '../../images/ntsw1.png';
+
 //import m1 from '../../images/m1.png';
 //import headertitle from "../../images/headertitle.png";
 //import { useState } from 'react';
@@ -17,9 +20,10 @@ export class BootstrapCarousel extends Component {
     render() {
 
         return (
-            <div>
+            <div className="maincontainer">
                 
-                <div className='container-fluid'  style={{ 'height': "500px" }}  >
+                <div className='container-fluid'  style={{ height: "500px" }}  >
+                   <div className="d-flex photo justify-content-center" ><img  style={{ 'height': "801px" }} src={Screenshot1}/></div> 
                     <Carousel >
 
 
