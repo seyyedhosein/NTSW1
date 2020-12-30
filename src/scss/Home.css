@@ -53,7 +53,7 @@ body {
 }
 
 .maincontainer {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -311,7 +311,7 @@ body {
 }
 
 .photo {
-  height: .2rem;
+  height: 0.2rem;
 }
 
 .alice-carousel__wrapper {
@@ -335,7 +335,7 @@ body {
 
 .HomeFooter {
   color: #eeeeee;
-  height: 10rem  !important;
+  height: 10rem !important;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -346,19 +346,19 @@ body {
 }
 
 .HomeFooter .HomeFooter-text {
-  display: -webkit-box  !important;
-  display: -ms-flexbox  !important;
-  display: flex  !important;
-  -webkit-box-orient: vertical  !important;
-  -webkit-box-direction: normal  !important;
-      -ms-flex-direction: column  !important;
-          flex-direction: column  !important;
-  -webkit-box-pack: center  !important;
-      -ms-flex-pack: center  !important;
-          justify-content: center  !important;
-  -webkit-box-align: center  !important;
-      -ms-flex-align: center  !important;
-          align-items: center  !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 
 .HomeSlider2 {
@@ -487,13 +487,15 @@ ol.carousel-indicators {
 
 .Spacer {
   width: 100%;
-  height: .5vh;
+  height: 0.5vh;
   background-color: #05214b;
   margin-bottom: -15px;
   margin-top: 5rem;
 }
 
 .dropdown-toggle {
+  border: none !important;
+  margin-top: 0px !important;
   font-size: small !important;
   background-color: #f7f7f7 !important;
   color: black !important;
@@ -503,6 +505,11 @@ ol.carousel-indicators {
 
 .dropdown-item {
   font-size: 0.85rem !important;
+  border: none !important;
+}
+
+.dropdown {
+  margin-top: 0px !important;
 }
 
 .dropdown .icon {
@@ -510,31 +517,34 @@ ol.carousel-indicators {
   transition: 1s !important;
 }
 
-.dropdown :hover .icon {
-  transform: rotate(180deg);
-  transition: 1s !important;
-  padding-bottom: 2px !important;
-  -webkit-filter: rotate(180deg);
-  -webkit-transition: 1s !important;
-  -moz-transition: 1s !important;
-  -ms-transition: 1s !important;
-  -o-transition: 1s !important;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+.dropdown :hover {
+  border-bottom: 0.1px solid #f7f7f7 !important;
+  border-radius: 0px !important;
 }
 
-.dropdown-item:focus {
-  background-color: #f7f7f7;
+.dropdown :hover .icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 1s !important;
+  transition: 1s !important;
+  padding-bottom: 2px !important;
+}
+
+.dropdown-item :focus {
+  background-color: #777;
 }
 
 .ff {
   font-size: 0.85rem !important;
 }
 
-.dropdown-menu {
-  margin-top: 0 !important;
+.dropdown-menu-right {
+  margin-top: -3px !important;
+  border: none !important;
+}
+
+.dropdown-menu-right :hover {
+  margin-top: -3px !important;
 }
 
 .svg {
@@ -586,6 +596,25 @@ ol.carousel-indicators {
   border: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  margin-top: 2px;
+}
+
+.button1:hover {
+  border-radius: 0 !important;
+  padding-top: 2px !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+
+.btn:hover {
+  border-top: 2px solid darkblue !important;
+  border-radius: none !important;
+  -webkit-border-radius: none !important;
+  -moz-border-radius: none !important;
+  -ms-border-radius: none !important;
+  -o-border-radius: none !important;
 }
 
 .alice-carousel {
@@ -681,5 +710,13 @@ ol.carousel-indicators {
 
 .carousel-control-prev-icon {
   background-image: url("./../images/previous.svg") !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100% !important;
+  z-index: 11;
+  background-color: aquamarine;
 }
 /*# sourceMappingURL=Home.css.map */

@@ -18,17 +18,17 @@ const Home = () => {
       <section style={{ backgroundColor: "#f7f7f7" }}>
         <HomeNavbar />
       </section>
-     <section style={{backgroundColor:"#fff"}}>
+      <section style={{ backgroundColor: "#fff" }}>
         <BootstrapCarousel />
       </section>
-     <section style={{backgroundColor:" #f7f7f7"}}>
+      <section style={{ backgroundColor: " #f7f7f7" }}>
         <HomeCards />
 
       </section>
-      <section style={{backgroundColor:"#fff"}}>
-        <HomeSlider2/>
+      <section style={{ backgroundColor: "#fff" }}>
+        <HomeSlider2 />
       </section>
-        <footer  style={{ backgroundColor: "#05214b" }}>
+      <footer style={{ backgroundColor: "#05214b" }}>
         <Footer />
 
       </footer>
