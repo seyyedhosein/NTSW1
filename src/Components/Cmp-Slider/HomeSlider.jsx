@@ -20,10 +20,10 @@ export class BootstrapCarousel extends Component {
     render() {
 
         return (
-            <div className="maincontainer">
+            <div >
                 
                 <div className='container-fluid'  style={{ height: "500px" }}  >
-                   <div className="d-flex photo justify-content-center" ><img  style={{ 'height': "801px" }} src={Screenshot1}/></div> 
+                   <div className="d-flex photo justify-content-center" ><img  style={{ 'height': "501px" , width:'100%' }} src={Screenshot1}/></div> 
                     <Carousel >
 
 
@@ -31,7 +31,7 @@ export class BootstrapCarousel extends Component {
 
                         <Carousel.Item style={{ 'height': "500px" }} >
                             <div className="px-auto slideSpace">
-                                <img style={{ 'height': "300px" }}
+                                <img style={{ 'height': "300px"  }}
                                     className=" w-45"
                                     src={ntsw1} />
                             </div>

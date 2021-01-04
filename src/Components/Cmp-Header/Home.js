@@ -12,12 +12,15 @@ import HomeSlider2 from './../Cmp-Slider2/HomeSlider2';
 const Home = () => {
   return (
     <div>
-      <section style={{ backgroundColor: "#05214b" }}>
-        <HomeHeader />
-      </section>
-      <section style={{ backgroundColor: "#f7f7f7" }}>
-        <HomeNavbar />
-      </section>
+      <div  class="sticky-top">
+        <section style={{ backgroundColor: "#05214b" }}>
+          <HomeHeader />
+        </section>
+        <section  style={{ backgroundColor: "#f7f7f7" }}>
+          <HomeNavbar />
+        </section>
+      </div>
+
       <section style={{ backgroundColor: "#fff" }}>
         <BootstrapCarousel />
       </section>
