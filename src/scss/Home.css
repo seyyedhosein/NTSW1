@@ -333,7 +333,7 @@ body {
           justify-content: center;
 }
 
-.HomeFooter {
+.footer .HomeFooter {
   color: #eeeeee;
   height: 10rem !important;
   display: -webkit-box !important;
@@ -345,7 +345,7 @@ body {
           align-items: center;
 }
 
-.HomeFooter .HomeFooter-text {
+.footer .HomeFooter .HomeFooter-text {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -353,9 +353,6 @@ body {
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
           flex-direction: column !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
@@ -508,27 +505,21 @@ ol.carousel-indicators {
   border: none !important;
 }
 
-.dropdown {
+.dropdown svg {
+  -webkit-transition: 1s !important;
+  transition: 1s !important;
+}
+
+.dropdown :hover {
   margin-top: 0px !important;
 }
 
-.dropdown svg {
+.dropdown :hover svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: 1s !important;
   transition: 1s !important;
-}
-
-.dropdown .icon {
-  -webkit-transition: 1s !important;
-  transition: 1s !important;
-}
-
-.dropdown .dropdown svg {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: 1s !important;
-  transition: 1s !important;
+  top: 0;
 }
 
 .dropdown-item :focus {
@@ -606,11 +597,11 @@ ol.carousel-indicators {
 
 .btn:hover {
   border-top: 2px solid darkblue !important;
-  border-radius: 0 !important;
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  -ms-border-radius: 0 !important;
-  -o-border-radius: 0 !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
 }
 
 .alice-carousel {
